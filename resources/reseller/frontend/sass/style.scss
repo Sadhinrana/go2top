@@ -1,0 +1,107 @@
+#order-form-gotop, 
+#mass_order, 
+#register-frontEnd, 
+#faq-page, 
+#add-funds, 
+#support-ticket-index,
+#support_ticket_details,
+#account-setting,
+#faq-page-deposite{
+    .form-control{
+        border-radius: 0;
+    }
+    .card {
+        border-radius: 0;
+    }
+    button{
+        background-color: #77b243;
+        &:hover{
+            background-color: #2272d6;
+        }
+    }
+}
+#faq-page{
+    button{
+        color: #fff;
+        &:hover{
+            background-color: #77b243;
+        }
+    }
+}
+#faq-page-deposite{
+    .card-title{
+        padding-left: 24px;
+    }
+}
+.container-div{
+    min-height: 500px;
+}
+
+.input-disabled {
+    opacity: 0.5;
+    background-color: #b3b5b3 !important;
+    pointer-events: none;
+}
+
+#about-us-page{
+    .__about_us_text{
+        padding: 15px 0;
+        height: 164px;
+    }
+    .et_pb_image_wrap{
+        width: 100%;
+        height: 200px !important;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .__about_us_picture
+    ,.__about_us_words
+    ,.__about_us_contact
+    {
+        margin-top: 50px;
+        h2{
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+        p{
+           text-align: justify;
+        }
+    }
+}
+
+#deposite-section{
+
+    .card-header{
+        padding-left: 0px;
+        padding-right: 0px;
+        .tabs-wrapper{
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            height: 96px;
+            .nav-item{
+                .nav-link{
+                    padding: 20px;
+                    &.active{
+                        border-bottom: solid 3px #77b243;
+                        
+                    }
+                    img{
+                        width: 45%;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-body{
+        border-top: none;
+    }
+    
+}

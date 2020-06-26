@@ -1,0 +1,294 @@
+.__service_row
+, .__table_header  {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    background: #f8f8f8;
+    padding: 10px;
+  }
+
+  .__table_header {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px 5px 0px 0px;
+      .__service_th_type{
+          grid-column: span 2;
+          &__form{
+              width: 100%;
+          }
+          &-webkit-input-placeholder {
+            color: blue;
+            font-weight: bold;
+        }
+      }
+      .__th{
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.63);
+      }
+  }
+
+  .__table_header_dropdown
+  {
+        .no-drop-down {
+            padding: 10px;
+        }
+  }
+
+
+  .__service_row {
+      background: #fff!important;
+      border-bottom: 1px solid #d4d4d4;
+      border-right: 1px solid #d4d4d49e;
+      border-left: 1px solid #d4d4d49e;
+      position: relative;
+      .__service_td{
+          padding:0 10px;
+      }
+      .__service_td_span{
+          grid-column: span 2;
+      }
+      .drag-handler-container
+      {
+        svg{
+          width: 14px;
+          height: 14px;
+          display: none;
+          transition: all .05s ease-out;
+        }
+      } 
+
+      &:hover{
+        background-color: #d4d4d44d !important;
+        cursor: pointer;
+        transition: all .05s ease-out;
+        svg{
+          display: inline-block;
+        }
+      }
+      &-services-disable{
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-left: 1px solid red;
+          height: 100%;
+          width: 2px;
+        }
+      }
+
+      &-overlay{
+        width: 100%;
+        background-color: rgba(64, 55, 55, 0.06)!important;;
+        /* pointer-events: none; */
+        &:hover{
+          background-color: #d4d4d44d !important;
+        }
+        .__service_td{
+          color: #c1c1c1;;
+        }
+      }
+      
+  }
+
+  .__service_th, .__service_th_td {
+    grid-column: span 6;
+  }
+
+  .__category_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+
+    .drag-handler-container, .__catename_action
+    {
+      svg{
+        width: 14px;
+        height: 14px;
+      }
+    } 
+  }
+
+  .__row_wrapper
+  {
+    &:last-child {
+        border-bottom: 1px solid #846161;
+      }
+  }
+
+
+  .service-block__collapse-block{
+    .service-block__collapse-button {
+        cursor: pointer;
+        &:before {
+            content: "Hide services";
+            display: inline-block;
+            color: #337ab7;
+            border-bottom: 1px dashed #337ab7;
+            font-size: 12px;
+          }
+      }
+  }
+
+
+  .__dropdown_buttons {
+    display: inline-block !important;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+      .btn{
+          padding: 0 10px;
+      }
+
+  }
+
+  .__control_panel {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 0px;
+      margin-bottom: 10px;
+
+    .__right_control_panel {
+      display: flex;
+    }
+      .__left_control_panel{
+          .service-checkbox-action{
+              background-color: #ff5050;
+              padding: 10px;
+              color: #ffff;
+              .service_action{
+                  background-color: #fff;
+              }
+          }
+          .btn-outline-secondary{
+            color: #141517;
+            border-color: #b7b7b7c7;
+            border-radius: 5px;
+          }
+      }
+  }
+
+.error-display{
+    line-height: 0.5;
+    margin: 10px 0;
+    &-item{
+        color: red;
+    }
+}
+
+#serviceModal, #serviceDescription{
+    .form-material
+    ,.form-control{
+      background-color: #fff;
+      padding: 8px;
+      background-image: inherit;
+      border: 1px solid #01020238;
+      border-radius: 5px;
+    }
+    .disabled {
+        background-color: #d3d3d3;
+    }
+    .card-header{
+      padding: 5px 10px;
+      border-radius: 9px;
+      background-color: rgba(0, 0, 0, 0.08);
+    }
+}
+
+.service_type_filter{
+    border-radius: 10px;
+   /*  &::-webkit-input-placeholder{
+      font-weight: bold;
+    } */
+    &:first-child{
+      font-weight: 600;
+    }
+}
+
+@media (min-width: 576px) {
+  .__modal_dialog_custom {
+    max-width: 600px !important;
+  }
+}
+.goTopDropdown{
+    .dropdown-toggle{
+        background-color: #fff !important;
+        color: #000000 !important;
+        border-color: #fff !important;
+        border-radius: 10px;
+    }
+}
+
+.reseller_order_filter_lists{
+    .list-group-item{
+        padding: 0px !important;
+        border: none !important;
+    }
+}
+
+
+/* custom input design */
+
+.auto-mode-input-field, .order_limit{
+  margin-right: 0;
+  margin-left: 0;
+  border: 1px solid #d3d3d3;
+  .col-1, .col-11, .col-5{
+    padding-left: 0;
+    position: relative;
+    .form-group{
+      margin-bottom: 0;
+      border-right: 1px solid #d3d3d3;
+      flex-basis: 33.33%;
+      padding-left: 10px;
+      padding-top: 5px;
+      label{
+        color: #989898;
+        font-size: 10px;
+        margin:0;
+      }
+      .form-control{
+        border: none !important;
+        padding-left: 0 !important;
+        margin: 0 !important;
+        height: 0 !important;
+      }
+      .price_box{
+        font-size: 10px;
+        vertical-align: middle;
+        padding: 5px 0px;
+        span{
+          display: block;
+          &:last-child{
+            color: #989898;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  .col-1{
+    border: none !important;
+    padding-top: 10px;
+  }
+}
+.order_limit{
+  .col-5{
+    flex: 0 0 84.66667% !important;
+    max-width: 90.66667% !important;
+    position: relative;
+    .form-group{
+      padding-top: 5px;
+    }
+    .overlay{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 93%;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+}

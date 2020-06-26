@@ -1,0 +1,34 @@
+{
+    "name": "ebet21",
+    "version": "1.0.0",
+    "description": "<p align=\"center\"><img src=\"https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg\" width=\"400\"></p>",
+    "main": "webpack.mix.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://bitbucket.org/coredeveloper2013/ebet21.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/coredeveloper2013/ebet21#readme",
+    "devDependencies": {
+        "browserify": "^16.5.0",
+        "del": "^5.1.0",
+        "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.2.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-minify": "^3.1.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "vinyl-source-stream": "^2.0.0"
+    },
+    "dependencies": {
+        "flatpickr": "^4.6.3"
+    }
+}
